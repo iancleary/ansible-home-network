@@ -18,6 +18,14 @@ variable "root_pass" {
   type = string
 }
 
+variable "tags" {
+  type = list(string)
+}
+
+variable "group" {
+  type = string
+}
+
 variable "sshkeys" {
   type = list(string)
 }

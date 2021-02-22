@@ -87,6 +87,18 @@ tfdestroy:
 tfdestroy: ## Demo Terraform Destroy
 	cd terraform/demo; terraform destroy
 
+nextcloudinit:
+nextcloudinit: ## Setup Terraform Providers
+	cd terraform/nextcloud; terraform init
+
+nextcloudcreate:
+nextcloudcreate: ## Demo Terraform Create
+	cd terraform/nextcloud; terraform apply
+
+nextclouddestroy:
+nextclouddestroy: ## Demo Terraform Destroy
+	cd terraform/nextcloud; terraform destroy
+
 inventory:
 inventory: ## Show ansible inventory
 	cd ansible; ansible-inventory --list
